@@ -4,11 +4,10 @@ class Solution {
         int start =0;
         int end =0;
         int window=nums[0];
-        if(nums[0]>=target){
+        if(window>=target){
             return 1;
         }
         while(end<nums.length-1){
-            System.out.println(start+" "+end);
              end++;
              window+=nums[end];
              while(window>=target){
