@@ -17,7 +17,7 @@ class Solution {
         int max = e;
         for (int i = minutes; i < n; i++) {
             if (grumpy[i - minutes] == 1) {
-                e -= customers[i-minutes];System.out.println(e);
+                e -= customers[i-minutes];
             }
             if (grumpy[i] == 1) {
                 e += customers[i];
