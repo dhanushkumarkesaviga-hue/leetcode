@@ -14,7 +14,6 @@ class Solution {
                 
             }
             for(int i=0;i<s.length();i++){
-                System.out.println(map1.get(t.charAt(i))+" "+map.get(t.charAt(i)));
                 if(!map1.get(t.charAt(i)).equals(map.get(t.charAt(i))))
                 {
                 return false;}
