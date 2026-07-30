@@ -21,9 +21,8 @@ class Solution {
             }
             if (grumpy[i] == 1) {
                 e += customers[i];
-           System.out.println(e);
             }
-     max = Math.max(max, e);System.out.println(max);
+     max = Math.max(max, e);
         }
 
         return sum + max;
