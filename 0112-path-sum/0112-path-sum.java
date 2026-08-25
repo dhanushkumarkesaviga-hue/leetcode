@@ -27,15 +27,13 @@ class Solution {
         if(root== null){
             return ;
         }  
-          
-
-          int targetSum = TargetSum-root.val;
-           if (targetSum==0 &&root.left == null && root.right == null) {
+           TargetSum = TargetSum-root.val;
+           if (TargetSum==0 &&root.left == null && root.right == null) {
             this.flag= true;
             return;
         }
-        dfs(root.left,targetSum);
+        dfs(root.left,TargetSum);
  
-         dfs(root.right,targetSum);
+         dfs(root.right,TargetSum);
     }
 }
