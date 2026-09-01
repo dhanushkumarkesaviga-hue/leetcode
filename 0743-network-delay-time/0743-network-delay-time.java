@@ -24,7 +24,7 @@ while(!pq.isEmpty()){
     int curr[] = pq.poll();
     int node= curr[0];
     int cost = curr[1];
-    if(distance[node]<cost) continue;
+   
     for(int []nei:adjlist.get(node)){
        int v= nei[0];
         int w= nei[1];
