@@ -7,7 +7,7 @@ class Solution {
                 ans = nums[i];
             }
             min = Math.min(ans, min);
-         System.out.print(min);}
+       }
         for (int i = 0; i < nums.length; i++) {
             if (min == Integer.MAX_VALUE) {
                 return true;
