@@ -13,25 +13,13 @@ class Solution {
         if(head==null){
             return null;
         }
-        HashSet<Integer> set = new HashSet<>();
-        List<Integer> list= new ArrayList<>();ListNode temp =head;
-        while(temp!=null){
-            list.add(temp.val);
-            temp = temp.next;
-        }
-        List<Integer> lis = new ArrayList<>();
-        for(int i = 0;i<list.size();i++){
-            if(!set.contains(list.get(i))){
-lis.add(list.get(i));
-set.add(list.get(i));
-            }
-        }
-        
-        ListNode n = new ListNode(lis.get(0));
-        ListNode it=n;
-        for(int  j =1;j<lis.size();j++){
-      n.next = new ListNode(lis.get(j));
-      n=n.next;
-        }
-  return it;  }
+   ListNode curr = head;
+   ListNode c =curr;
+   while(curr!=null&&curr.next!=null){
+    while(curr!=null&&curr.next!=null&&curr.val==curr.next.val){
+        curr.next=curr.next.next;
+    }
+    curr= curr.next;
+   }
+  return c;  }
 }
